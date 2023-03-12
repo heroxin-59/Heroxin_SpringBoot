@@ -1,0 +1,6 @@
+# 多环境开发
+# 请选择你的环境
+spring:
+  profiles:
+    active: prod
+

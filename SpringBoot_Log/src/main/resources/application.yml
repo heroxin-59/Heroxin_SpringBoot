@@ -1,0 +1,26 @@
+#debug= true
+
+logging:
+  group:
+    heroxin: com.heroxin.controller
+  level:
+    root: info
+    #  使用分组设置日志级别
+    heroxin: debug
+    #  使用包名设置日志级别
+#    com.heroxin.controller: debug
+
+  #  设置日志文件
+  file:
+    name: SSMP.log
+#    path:
+  logback:
+    rollingpolicy:
+      max-file-size: 10KB
+      file-name-pattern: SSMP.%d{yyyy-MM-dd}.%i.log
+  # 设置日志模板格式(没啥卵用，用默认的就好)
+  #  %d 时间
+  #  %m 消息
+  #  %n 换行
+  pattern:
+    console: "%d - %m %n"
